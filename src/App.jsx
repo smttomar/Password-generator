@@ -1,6 +1,5 @@
-import { useState, useCallback, useEffect, useRef, use } from 'react' 
+import { useState, useCallback, useEffect, useRef} from 'react' 
 import './index.css'
-import ThemeToggle from '../../customReact/darkmode.jsx'
 
 function App() {
   const [length, setLength] = useState(8)
