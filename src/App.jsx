@@ -103,8 +103,6 @@ rounded-lg px-4 py-3 my-8 bg-gray-800 text-gray-200 text-lg font-semibold">
         onClick={copyPasswordToClipboard}
         className='bg-blue-700 text-white px-2 py-0.5  hover:bg-blue-900 transition-colors hover:cursor-pointer rounded-md'
         >{copied ? "Copied!" : "Copy" }</button>
-        
-        
       </div>
       <div className='flex items-center gap-x-1'>
         <input 
