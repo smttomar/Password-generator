@@ -12,9 +12,9 @@ function App() {
 
   useEffect(() => {
     if (darkMode) {
-      document.body.classList.add("dark");
+      document.documentElement.classList.add("dark");
     } else {
-      document.body.classList.remove("dark");
+      document.documentElement.classList.remove("dark");
     }
   }, [darkMode]);
 
@@ -51,16 +51,15 @@ function App() {
   // }, [length, numberAllowed, charAllowed])
   
   return (
-    <div className="w-full max-w-md mx-auto shadow-md
-rounded-lg px-4 py-3 my-8 bg-gray-800 text-gray-200 text-lg font-semibold">
+    <div className="w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 bg-gray-200 dark:bg-gray-800 text-black dark:text-white text-lg font-semibold">
       <span className='flex items-center'>
         <button
       onClick={() => setDarkMode(!darkMode)}
-      className="px-1 py-1 rounded bg-gray-200 dark:bg-gray-700 dark:text-white mr-15 "
+      className="px-1 py-1 rounded bg-gray-400 dark:bg-gray-900 mr-15 hover:ring-1 "
       >
       {darkMode ? "🌑" : "🌕"}
     </button>
-      <h1 className='text-gray-200 text-center my-3 text-2xl font-bold mb-5 '>Password Generator</h1>
+      <h1 className='text-center my-3 text-2xl font-bold mb-5 '>Password Generator</h1>
       </span>
       <div className='flex shadow rounded-lg overflow-hidden mb-4'>
         <input 
